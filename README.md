@@ -53,7 +53,7 @@ Here are some highlights of my work:
 
 ## 📫 Contact
 
-- **Email:** [basanzietech@gmail.com]
+- **Email:** [basanzietech@gmail.com](basanzietech@gmail.com)
 - **GitHub:** [github.com/basanzietech](https://github.com/basanzietech)
 ---
 
