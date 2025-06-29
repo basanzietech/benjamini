@@ -4234,3 +4234,475 @@ form .response .text-info{
 .Typewriter__cursor{
 	display: none;
 }
+
+/* Projects Placeholder Styles */
+.projects-placeholder {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.placeholder-content h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.placeholder-content p {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.project-types {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.project-types li {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 25px;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.project-types li:hover {
+    background: rgba(0, 123, 255, 0.2);
+    transform: translateX(10px);
+}
+
+.project-types li i {
+    color: #007bff;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Service Features Styles */
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.service-features li {
+    color: #fff;
+    font-size: 0.95rem;
+    margin: 8px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-features li:before {
+    content: "✓";
+    color: #007bff;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 15px 0;
+    text-align: center;
+}
+
+/* Training Section Styles */
+.training-section {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    position: relative;
+    overflow: hidden;
+}
+
+.training-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23ffffff" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+.training-content {
+    position: relative;
+    z-index: 2;
+}
+
+.training-info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.training-info h3 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.training-info p {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.training-features {
+    margin: 35px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin: 18px 0;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateX(10px);
+    background: rgba(0, 123, 255, 0.1);
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+.feature-item i {
+    color: #007bff;
+    font-size: 1.3rem;
+    margin-right: 18px;
+    min-width: 25px;
+    text-align: center;
+}
+
+.feature-item span {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.training-details {
+    background: rgba(0, 123, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    margin-top: 35px;
+}
+
+.detail-item {
+    color: #fff;
+    font-size: 1.05rem;
+    margin: 12px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-item strong {
+    color: #007bff;
+    font-weight: 600;
+    min-width: 120px;
+}
+
+.training-card {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 123, 255, 0.4);
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.training-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+    100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+}
+
+.card-header h4 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.card-header .price {
+    font-size: 3rem;
+    color: #fff;
+    margin: 15px 0;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+}
+
+.card-header .duration {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
+}
+
+.card-body p {
+    color: #fff;
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+.card-body .theme-btn {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.card-body .theme-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced Service Features */
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+
+.service-features li {
+    color: #fff;
+    font-size: 1rem;
+    margin: 12px 0;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 25px;
+}
+
+.service-features li:before {
+    content: "✓";
+    color: #007bff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-size: 1.1rem;
+}
+
+.service-features li:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 20px 0;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Enhanced Projects Placeholder */
+.projects-placeholder {
+    text-align: center;
+    padding: 80px 30px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="%23ffffff" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    pointer-events: none;
+}
+
+.placeholder-content {
+    position: relative;
+    z-index: 2;
+}
+
+.placeholder-content h3 {
+    color: #fff;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.placeholder-content p {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-types {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.project-types li {
+    color: #fff;
+    font-size: 1.15rem;
+    margin: 18px 0;
+    padding: 15px 25px;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.05));
+    border-radius: 30px;
+    border: 1px solid rgba(0, 123, 255, 0.3);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-types li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.project-types li:hover::before {
+    left: 100%;
+}
+
+.project-types li:hover {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(0, 123, 255, 0.1));
+    transform: translateX(15px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.project-types li i {
+    color: #007bff;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+    .projects-placeholder {
+        padding: 50px 20px;
+    }
+    
+    .placeholder-content h3 {
+        font-size: 2.2rem;
+    }
+    
+    .training-info h3 {
+        font-size: 1.8rem;
+    }
+    
+    .training-card {
+        margin-top: 30px;
+        padding: 30px 20px;
+    }
+    
+    .card-header .price {
+        font-size: 2.5rem;
+    }
+    
+    .training-info {
+        padding: 25px;
+    }
+    
+    .training-details {
+        padding: 20px;
+    }
+    
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .detail-item strong {
+        min-width: auto;
+        margin-bottom: 5px;
+    }
+}
+
+.icon-service {
+    font-size: 3.5rem;
+    color: #007bff;
+    margin: 25px 0 15px 0;
+    text-align: center;
+}
+
+.service-features li {
+    color: #222;
+    background: rgba(255,255,255,0.7);
+    border-radius: 8px;
+    margin: 8px 0;
+    padding: 8px 16px;
+    border-bottom: none;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.service-features li:before {
+    color: #007bff;
+}
